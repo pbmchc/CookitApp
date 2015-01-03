@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/meal"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/fotoSzczegoly"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tytulSzczegoly"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="Kurczak w cieście po meksykańsku"
+        android:layout_below="@id/fotoSzczegoly"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/skladnikSzczegolyLBL"
+        android:layout_below="@id/tytulSzczegoly"
+        android:text="POTRZEBNE SKŁADNIKI"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/skladnikSzczegolyTXT"
+        android:text="Blalalalkawkowdiwjfewhfebfyegfdwifhhfeigiehgiedwifwifjwifjiwdjwifwjfiwjfiwdjwd
+        dwofjeifjeihgfuehguh
+        fefegrgrgg"
+        android:layout_below="@id/skladnikSzczegolyLBL"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etapSzczegolyLBL"
+        android:text="SPOSOB PRZYGOTOWANIA"
+        android:layout_below="@id/skladnikSzczegolyTXT"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_below="@id/etapSzczegolyLBL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etapSzczegolyTXT"
+        android:text="1. ksjuaodjwjfwf
+        2.cew dwfwwf
+        3. dwfwrfrgrgrg"/>
+    <CheckBox
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DODAJ DO ULUBIONYCH"
+        android:id="@+id/ulubionyCKB"
+        android:layout_below="@id/etapSzczegolyTXT"
+        android:layout_alignParentLeft="true"
+        style="?android:attr/starStyle"/>
+</RelativeLayout>

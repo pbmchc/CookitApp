@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="MENU GŁÓWNE"
+    android:textStyle="bold"
+    android:textSize="25dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/menuGlowneTXT"
+    android:layout_marginBottom="20dp"/>
+    <Button
+        android:layout_width="300dp"
+        android:id="@+id/dodajPrzepisBTN"
+        android:text="DODAJ PRZEPIS"
+        android:layout_below="@id/menuGlowneTXT"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/mojePrzepisyBTN"
+        android:text="MOJE PRZEPISY"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/dodajPrzepisBTN"
+        android:layout_marginLeft="40dp"/>
+    <Button
+        android:layout_marginRight="40dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/wszystkiePrzepisyBTN"
+        android:text="WSZYSTKIE PRZEPISY"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/dodajPrzepisBTN"/>
+    <Button
+        android:layout_marginLeft="40dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/ulubionePrzepisyBTN"
+        android:text="ULUBIONE PRZEPISY"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/mojePrzepisyBTN"/>
+    <Button
+        android:layout_marginRight="40dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/losujPrzepisBTN"
+        android:text="LOSUJ PRZEPIS NA DZISIAJ"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/wszystkiePrzepisyBTN"/>
+
+</RelativeLayout>

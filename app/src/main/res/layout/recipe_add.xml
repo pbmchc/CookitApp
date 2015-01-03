@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DODAWANIE PRZEPISU"
+        android:id="@+id/naglowek"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_below="@id/naglowek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TYTUŁ"
+        android:id="@+id/tytulLBL"/>
+    <EditText
+        android:id="@+id/tytulTXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tytulLBL"
+        android:hint="Nazwij swoje danie"/>
+    <TextView
+        android:layout_below="@id/tytulTXT"
+        android:id="@+id/skladnikLBL"
+        android:text="SKŁADNIKI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/skladnikTXT"
+        android:hint="Wprowadź składniki"
+        android:layout_below="@id/skladnikLBL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skladnikTXT"
+        android:text="SPOSÓB PRZYRZĄDZENIA"
+        android:id="@+id/etapLBL"/>
+    <EditText
+        android:hint="Podaj poszczególne etapy przygotowania dania"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etapTXT"
+        android:layout_below="@id/etapLBL"/>
+    <TextView
+        android:id="@+id/fotoLBL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etapTXT"
+        android:text="DODAJ ZDJĘCIE"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fotoLBL"
+        android:text="Przeglądaj..."
+        android:id="@+id/fotoBTN"
+        android:layout_centerInParent="true"
+        android:onClick="SzukajZdjecia"/>
+    <ImageView
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:id="@+id/foto"
+        android:layout_below="@id/fotoBTN"
+        android:layout_marginTop="2dp"
+        />
+    <Button
+        android:id="@+id/dodajBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="DODAJ PRZEPIS"
+        android:onClick="DodajPrzepis"
+        />
+</RelativeLayout>
